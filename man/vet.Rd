@@ -19,13 +19,13 @@ check_pkgs(pkgs, parent = fs::path_dir(usethis::proj_get()))
 
 \item{parent}{The absolute path to the parent directory of all packages.
 You can omit this if your working directory is one of the packages under
-the `parent` directory.}
+the \code{parent} directory.}
 }
 \value{
 Invisible.
 }
 \description{
-Vectorized versions of [devtools::test()] and [devtools::check()] designed
+Vectorized versions of \code{\link[devtools:test]{devtools::test()}} and \code{\link[devtools:check]{devtools::check()}} designed
 to work with multiple packages stored under a single parent directory.
 }
 \examples{
@@ -36,5 +36,5 @@ check_pkgs(pkgs)
 }
 }
 \seealso{
-[devtools::test()] and [devtools::check()].
+\code{\link[devtools:test]{devtools::test()}} and \code{\link[devtools:check]{devtools::check()}}.
 }

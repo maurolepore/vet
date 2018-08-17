@@ -21,3 +21,4 @@ Imports:
     purrr
 Suggests: 
     testthat
+Roxygen: list(markdown = TRUE)
