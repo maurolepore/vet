@@ -4,8 +4,10 @@
 # vet
 
 The goal of vet is to test and check at the same time multiple packages
-in a single, local, parent directory. This helps develop a system
-composed of multiple packages, for example, all the packages of
+in a single, local, parent directory.
+
+**vet** helps develop a system composed of multiple packages, for
+example, all the packages of
 [**fgeo**](https://forestgeo.github.io/fgeo/) – where some packages may
 depend on other packages of the same system, and changing one package
 may brake others. In this scenario, it is useful to know quickly when,
@@ -28,6 +30,5 @@ library(vet)
 
 pkgs <- fgeo::fgeo_core()
 test_pkgs(pkgs)
-
 check_pkgs(pkgs)
 ```
