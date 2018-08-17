@@ -19,3 +19,5 @@ Imports:
     fs,
     glue,
     purrr
+Suggests: 
+    testthat

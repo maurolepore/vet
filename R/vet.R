@@ -21,7 +21,7 @@
 #' test_pkgs(pkgs)
 #' check_pkgs(pkgs)
 #' }
-vet <- function(pkgs, .f, parent = fs::path_dir(usethis::proj_path())) {
+vet <- function(pkgs, .f, parent = fs::path_dir(usethis::proj_get())) {
   check <- identical(.f, devtools::check)
   vet_dir <- if (check) "/{.x}" else "/{.x}/tests/testthat"
   vet_dirs <- purrr::map_chr(pkgs, ~glue::glue(parent, vet_dir))
@@ -30,13 +30,13 @@ vet <- function(pkgs, .f, parent = fs::path_dir(usethis::proj_path())) {
 
 #' @rdname vet
 #' @export
-test_pkgs <- function(pkgs, parent = fs::path_dir(usethis::proj_path())) {
+test_pkgs <- function(pkgs, parent = fs::path_dir(usethis::proj_get())) {
   vet(pkgs, devtools::test, parent)
 }
 
 #' @rdname vet
 #' @export
-check_pkgs <- function(pkgs, parent = fs::path_dir(usethis::proj_path())) {
+check_pkgs <- function(pkgs, parent = fs::path_dir(usethis::proj_get())) {
   vet(pkgs, devtools::check, parent)
 }
 

@@ -6,11 +6,11 @@
 \alias{check_pkgs}
 \title{Test an check multiple packages.}
 \usage{
-vet(pkgs, .f, parent = fs::path_dir(usethis::proj_path()))
+vet(pkgs, .f, parent = fs::path_dir(usethis::proj_get()))
 
-test_pkgs(pkgs, parent = fs::path_dir(usethis::proj_path()))
+test_pkgs(pkgs, parent = fs::path_dir(usethis::proj_get()))
 
-check_pkgs(pkgs, parent = fs::path_dir(usethis::proj_path()))
+check_pkgs(pkgs, parent = fs::path_dir(usethis::proj_get()))
 }
 \arguments{
 \item{pkgs}{Character string of the names of packages to vet.}
