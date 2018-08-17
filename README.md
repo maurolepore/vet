@@ -3,6 +3,9 @@
 
 # vet
 
+[![Travis build
+status](https://travis-ci.org/maurolepore/vet.svg?branch=master)](https://travis-ci.org/maurolepore/vet)
+
 The goal of vet is to test and check at the same time multiple packages
 in a single, local, parent directory.
 
