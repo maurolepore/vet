@@ -48,5 +48,5 @@ fgeo_dirs <- function() {
 #' fgeo_non_ascii("tests/testthat")
 fgeo_non_ascii <- function(dir = "R") {
   r_folders <- purrr::map_chr(fgeo_dirs(), ~glue::glue(.x, "/{dir}"))
-  set_names(purrr::map(r_folders, find_non_ascii), fgeo::fgeo_core())
+  rlang::set_names(purrr::map(r_folders, find_non_ascii), fgeo::fgeo_core())
 }
