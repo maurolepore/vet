@@ -1,3 +1,4 @@
+^tmp\.R$
 ^\.travis\.yml$
 ^README\.Rmd$
 ^docs$
